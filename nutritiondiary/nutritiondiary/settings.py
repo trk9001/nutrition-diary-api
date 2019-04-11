@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # this project's apps
-    'api.apps.ApiConfig',
+    'api.apps.APIConfig',
 ]
 
 MIDDLEWARE = [
