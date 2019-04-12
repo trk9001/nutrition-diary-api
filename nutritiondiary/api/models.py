@@ -67,3 +67,6 @@ class NutritionData(models.Model):
         decimal_places=2,
         blank=True,
     )
+
+    class Meta:
+        verbose_name_plural = 'nutrition data'
