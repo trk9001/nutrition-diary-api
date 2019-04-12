@@ -12,10 +12,3 @@ class NutritionDataSerializer(serializers.ModelSerializer):
                   'total_fat', 'total_carbohydrate', 'dietary_fiber', 'sugars',
                   'protein', 'serving_size_qty', 'serving_size_unit',
                   'serving_weight_grams']
-
-
-class NutritionDataListSerializer(serializers.Serializer):
-    """Nested list serializer for use in search results."""
-
-    total_hits = serializers.IntegerField(min_value=0)
-    hits = NutritionDataSerializer(many=True, read_only=True)
