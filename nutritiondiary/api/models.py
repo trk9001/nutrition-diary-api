@@ -27,31 +27,37 @@ class NutritionData(models.Model):
         max_digits=20,
         decimal_places=2,
         blank=True,
+        null=True,
     )
     total_fat = models.DecimalField(
         max_digits=20,
         decimal_places=2,
         blank=True,
+        null=True,
     )
     total_carbohydrate = models.DecimalField(
         max_digits=20,
         decimal_places=2,
         blank=True,
+        null=True,
     )
     dietary_fiber = models.DecimalField(
         max_digits=20,
         decimal_places=2,
         blank=True,
+        null=True,
     )
     sugars = models.DecimalField(
         max_digits=20,
         decimal_places=2,
         blank=True,
+        null=True,
     )
     protein = models.DecimalField(
         max_digits=20,
         decimal_places=2,
         blank=True,
+        null=True,
     )
     serving_size_qty = models.DecimalField(
         max_digits=20,
@@ -61,11 +67,13 @@ class NutritionData(models.Model):
     serving_size_unit = models.CharField(
         max_length=300,
         blank=True,
+        null=True,
     )
     serving_weight_grams = models.DecimalField(
         max_digits=20,
         decimal_places=2,
         blank=True,
+        null=True,
     )
 
     class Meta:
