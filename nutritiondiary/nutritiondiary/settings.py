@@ -100,6 +100,12 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
+# Project-specific custom settings --------------------------------------------
+
+# Nutritionix API
+NUTRITIONIX_APP_ID = None
+NUTRITIONIX_APP_KEY = None
+
 # 3rd party settings ----------------------------------------------------------
 
 # Django REST Framework settings
